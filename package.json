@@ -13,7 +13,8 @@
     "unit_test:watch": "npm run unit_test -- --watch",
     "test": "npm-run-all clean --parallel lint build unit_test",
     "develop": "npm run unit_test:watch",
-    "prepublish": "npm test"
+    "prepublish": "npm test",
+    "postinstall": "npm i && npm run build"
   },
   "repository": {
     "type": "git",
